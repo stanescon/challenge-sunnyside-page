@@ -24,6 +24,7 @@ header h1 {
     justify-self: center;
     align-self: center;
     letter-spacing: 0.5rem;
+    margin: 65px 0;
 }
 .logo {
     height: 40px;
