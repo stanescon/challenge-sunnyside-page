@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+.cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 0.9fr 1.1fr;
+    background-image: url(./images/desktop/image-header.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 50px;
+}
+header h1 {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-column: span 2;
+    font-size: 4.5rem;
+    justify-self: center;
+    align-self: center;
+    letter-spacing: 0.5rem;
+}
+.logo {
+    height: 40px;
+}
+.menu {
+    text-align: end;
+}
+nav a {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.3rem;
+    margin: 0 25px;
+    color: #FFFFFF;
+}
+.botao-ativo {
+    padding: 20px 30px;
+    border-radius: 47px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+}
+.seta {
+    grid-column: span 2;
+    justify-self: center;
+    margin-bottom: 350px;
+}
+.conteudo-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.imagem {
+    width: 100%;
+    align-self: center;
+}
+.texto {
+    align-self: center;
+    padding: 15%;
+}
+.texto h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    color: #141414;
+    line-height: 3.5rem;
+    margin-bottom: 30px;
+}
+.texto p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #6d6d6d;
+    margin-bottom: 50px;
+}
+.ler-mais {
+    background: transparent;
+    border: none;
+    font-family: 'Fraunces', serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: #21564b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.imagem-texto p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #21564b;
+    text-align: center;
+}
+.imagem-texto {
+    position: relative;
+}
+.conteudo-imagem-texto {
+    position: absolute;
+    bottom: 0px;
+    padding: 10% 25%;
+}
+.imagens {
+    display: flex;
+    flex-direction: row;
+}
+.depoimentos-clientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px 50px;
+    justify-items: center;
+    margin: 50px;
+}
+h4 {
+    grid-column: span 3;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    margin: 20px;
+    color: #7c7c7c;
+}
+.avatar + p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #6d6d6d;
+}
+.cliente-emily, .cliente-thomas, .cliente-jennie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.nome-cliente {
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
+.nome-cliente + p {
+    margin-top: 15px;
+    font-family: 'Barlow', sans-serif;
+    color: #6d6d6d;
+}
+.avatar {
+    width: 70px;
+    border-radius: 50px;
+    margin: 60px 0;
+}
+.depoimentos-clientes p {
+    text-align: center;
+}
+.lista-imagem {
+    width: 25vw;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    background-color: #90d4c5;
+    padding: 50px;
+}
+.menu-footer ul {
+    display: flex;
+    flex-direction: row;
+}
+.menu-footer a {
+    color: #2C7566;
+}
+.menu-footer a:hover {
+    color: #FFFFFF;
+}
+.logotipo-footer {
+    transform: scale(1.5);
+}
+.redes {
+    display: flex;
+    gap: 30px;
+}
+.icon-redes:hover path {
+    fill: #FFFFFF;
+}
