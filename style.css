@@ -2,17 +2,22 @@
     box-sizing: border-box;
 }
 html {
-    width: 100vw;
     overflow-x: hidden;
 }
 .cabecalho {
+    margin-bottom: -5px;
+}
+.imagem-cabecalho-desktop {
+    position: relative;
+    width: 100vw;
+}
+.conteudo-cabecalho {
+    width: 100vw;
+    position: absolute;
+    top: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 0.9fr 1.1fr;
-    background-image: url(./images/desktop/image-header.jpg);
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
     padding: 40px 50px;
 }
 header h1 {
@@ -24,7 +29,7 @@ header h1 {
     justify-self: center;
     align-self: center;
     letter-spacing: 0.5rem;
-    margin: 65px 0;
+    margin: 130px 0 65px 0;
 }
 .logo {
     height: 40px;
@@ -46,16 +51,19 @@ nav a {
     text-transform: uppercase;
     font-family: 'Fraunces', serif;
 }
+.botao-ativo:hover {
+    background-color: #6fceff;
+    color: #FFFFFF;
+}
 .seta {
     grid-column: span 2;
     justify-self: center;
-    margin-bottom: 350px;
 }
 .conteudo-principal {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.imagem {
+.imagem-desktop {
     width: 100%;
     align-self: center;
 }
@@ -215,3 +223,101 @@ footer {
 .icon-redes:hover path {
     fill: #FFFFFF;
 }
+.imagem-cabecalho-mobile {
+    display: none;
+}
+.icon-menu {
+    display: none;
+}
+.imagem-mobile {
+    display: none;
+}
+.lista-imagem-mobile {
+    display: none;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 1300px) {
+    .imagem-cabecalho-desktop {
+        display: none;
+    }
+    .imagem-cabecalho-mobile {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    .menu {
+        position: absolute;
+        right: -100vw;
+        top: 120px;
+        padding: 50px;
+        width: 80vw;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        transition: 1s ease-in-out;
+    }
+    .botao-ativo {
+        background-color: #fed201;
+        color: #000000;
+    }
+    nav a {
+        color: #7c7c7c;
+        font-size: 2rem;
+    }
+    .icon-menu {
+        display: block;
+        align-self: center;
+        justify-self: end;
+    }
+    header h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column;
+    }
+    .conteudo-imagem-texto {
+        padding: 15px 30px;
+    }
+    .depoimentos-clientes {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagens {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .imagem-desktop {
+        display: none;
+    }
+    .imagem-mobile {
+        width: 100vw;
+        display: block;
+    }
+    .depoimentos-clientes {
+        margin: 0px;
+    }
+    h4 {
+        text-align: center;
+        margin: 0px;
+    }
+    .lista-imagem {
+        display: none;
+    }
+    .lista-imagem-mobile {
+        width: 50vw;
+        display: block;
+    }
+    .menu-footer a {
+        margin: 0 5px;
+        font-size: 1.3rem;
+    }
+    .menu-ativo {
+        right: 10vw;
+    }
+} 
