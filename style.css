@@ -248,6 +248,7 @@ footer {
         position: relative;
     }
     .menu {
+        display: none;
         position: absolute;
         right: -100vw;
         top: 120px;
@@ -258,7 +259,11 @@ footer {
         flex-direction: column;
         gap: 40px;
         align-items: center;
-        transition: 1s ease-in-out;
+        transition: 1s;
+    }
+    .menu-ativo {
+        display: flex;
+        right: 10vw;
     }
     .botao-ativo {
         background-color: #fed201;
@@ -317,7 +322,5 @@ footer {
         margin: 0 5px;
         font-size: 1.3rem;
     }
-    .menu-ativo {
-        right: 10vw;
-    }
+    
 } 
