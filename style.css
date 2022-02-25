@@ -244,18 +244,20 @@ footer {
     }
     .imagem-cabecalho-mobile {
         display: block;
-        width: 100%;
+        width: 100vw;
         position: relative;
     }
+    .logo {
+        height: 25px;
+    }
     .menu {
-        display: none;
-        position: absolute;
+        display: flex;
+        position: fixed;
         right: -100vw;
         top: 120px;
         padding: 50px;
         width: 80vw;
         background-color: #FFFFFF;
-        display: flex;
         flex-direction: column;
         gap: 40px;
         align-items: center;
@@ -264,6 +266,7 @@ footer {
     .menu-ativo {
         display: flex;
         right: 10vw;
+        transition: 1s;
     }
     .botao-ativo {
         background-color: #fed201;
