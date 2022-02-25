@@ -239,6 +239,10 @@ footer {
 /* MOBILE */
 
 @media screen and (max-width: 1300px) {
+    .cabecalho {
+        position: relative;
+        overflow: hidden;
+    }
     .imagem-cabecalho-desktop {
         display: none;
     }
@@ -252,7 +256,7 @@ footer {
     }
     .menu {
         display: flex;
-        position: fixed;
+        position: absolute;
         right: -100vw;
         top: 120px;
         padding: 50px;
